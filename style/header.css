@@ -1,0 +1,46 @@
+.cabecalho {
+    position: relative;
+    background-color: var(--cor-secundaria);
+	padding: 20px 0;
+}
+
+.container-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container-menu__containers {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.container-menu__imagem-background {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url('../assets/Menu.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container-menu__lista {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+}
+
+.lista__item {
+    background-color: var(--cor-secundaria);
+    padding: 16px;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked~.container-menu__lista {
+	display: list-item;
+}

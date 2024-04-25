@@ -1,0 +1,19 @@
+@import url('header.css');
+
+:root {
+	--cor-primaria: #EBECEE;
+	--cor-secundaria: #FFFFFF;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--cor-primaria);
+}
+
+#menu:checked~.container-menu__imagem-background {
+	display: list-item;
+}
